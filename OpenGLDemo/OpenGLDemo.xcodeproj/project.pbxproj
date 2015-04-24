@@ -10,6 +10,7 @@
 		3BA7ADCA1AE9CA6C005E154C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7ADC91AE9CA6C005E154C /* main.cpp */; };
 		3BA7ADD11AE9CA7B005E154C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA7ADD01AE9CA7B005E154C /* OpenGL.framework */; };
 		3BA7ADD31AE9CA81005E154C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA7ADD21AE9CA81005E154C /* GLUT.framework */; };
+		436247311AEA26620021E0D6 /* OpenGL_Helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4362472F1AEA26620021E0D6 /* OpenGL_Helper.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,8 @@
 		3BA7ADC91AE9CA6C005E154C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3BA7ADD01AE9CA7B005E154C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		3BA7ADD21AE9CA81005E154C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		4362472F1AEA26620021E0D6 /* OpenGL_Helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGL_Helper.cpp; sourceTree = "<group>"; };
+		436247301AEA26620021E0D6 /* OpenGL_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGL_Helper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 		3BA7ADC81AE9CA6C005E154C /* OpenGLDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4362472F1AEA26620021E0D6 /* OpenGL_Helper.cpp */,
+				436247301AEA26620021E0D6 /* OpenGL_Helper.h */,
 				3BA7ADC91AE9CA6C005E154C /* main.cpp */,
 			);
 			path = OpenGLDemo;
@@ -126,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436247311AEA26620021E0D6 /* OpenGL_Helper.cpp in Sources */,
 				3BA7ADCA1AE9CA6C005E154C /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +251,7 @@
 				3BA7ADCF1AE9CA6C005E154C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

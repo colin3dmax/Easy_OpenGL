@@ -12,6 +12,9 @@
 #include <stdio.h>
 #include <OpenGL/OpenGL.h>
 #include <GLUT/GLUT.h>
+
+#pragma clang  diagnostic ignored "-Wdeprecated-declarations"
+
 extern void display();
 
 void runOpenGL(int argc, char ** argv);

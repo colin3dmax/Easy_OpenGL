@@ -21,13 +21,17 @@ void init()
 
 
 void runOpenGL(int argc, char ** argv){
+    //初始化GLUT
     glutInit(&argc, argv);
+    //设置色彩模式——RGBA模式或者颜色索引模式
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
     glutInitWindowSize(250, 250);
     glutInitWindowPosition(100, 100);
     glutCreateWindow("Hello");
     init();
+    //显示回调函数
     glutDisplayFunc(display);
+    
     glutMainLoop();
     
 }
