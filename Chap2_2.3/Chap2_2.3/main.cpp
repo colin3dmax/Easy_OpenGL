@@ -42,7 +42,7 @@ int main(int argc, char * argv[]) {
         
         glFlush();
     
-    });
+    init();
     
     glutReshapeFunc([](int w,int h){
         glViewport(0, 0, w, h);
@@ -50,6 +50,25 @@ int main(int argc, char * argv[]) {
         glOrtho(-8.0,8.0, -5.0, 5.0, -1.0, 1.0);
     });
     
+    glutDisplayFunc([](){
+        glColor3f(0, 0, 0);
+        glClear(GL_COLOR_BUFFER_BIT);
+        
+        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+        
+        glColor3f(1.0, 0, 1.0);
+        glBegin(GL_POLYGON);
+        glEdgeFlag(GL_TRUE);
+        glVertex3f(0, 0, 0);
+        glEdgeFlag(GL_FALSE);
+        glVertex3f(5, -6, 0);
+        glEdgeFlag(GL_TRUE);
+        glVertex3f(5,5, 0);
+        glEnd();
+        
+        glFlush();
+    
+    });
     
     glutMainLoop();
     return 0;
