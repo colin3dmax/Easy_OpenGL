@@ -18,6 +18,12 @@
       location = "container:"
       name = "Chap2">
       <FileRef
+         location = "group:Chap2_2.5/Chap2_2.5.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Chap2_2.4/Chap2_2.4.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Chap2_2.3/Chap2_2.3.xcodeproj">
       </FileRef>
       <FileRef
