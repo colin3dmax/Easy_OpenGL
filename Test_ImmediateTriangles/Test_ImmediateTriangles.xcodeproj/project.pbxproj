@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4331146D1AF0D5F200D1EF19 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4331146C1AF0D5F200D1EF19 /* OpenGL.framework */; };
+		433114701AF0D5F200D1EF19 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4331146F1AF0D5F200D1EF19 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		433114671AF0D5F200D1EF19 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		433114691AF0D5F200D1EF19 /* Test_ImmediateTriangles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test_ImmediateTriangles; sourceTree = BUILT_PRODUCTS_DIR; };
+		4331146C1AF0D5F200D1EF19 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		4331146F1AF0D5F200D1EF19 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		433114661AF0D5F200D1EF19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4331146D1AF0D5F200D1EF19 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		433114601AF0D5F200D1EF19 = {
+			isa = PBXGroup;
+			children = (
+				4331146E1AF0D5F200D1EF19 /* Test_ImmediateTriangles */,
+				4331146B1AF0D5F200D1EF19 /* Frameworks */,
+				4331146A1AF0D5F200D1EF19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4331146A1AF0D5F200D1EF19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				433114691AF0D5F200D1EF19 /* Test_ImmediateTriangles */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4331146B1AF0D5F200D1EF19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4331146C1AF0D5F200D1EF19 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4331146E1AF0D5F200D1EF19 /* Test_ImmediateTriangles */ = {
+			isa = PBXGroup;
+			children = (
+				4331146F1AF0D5F200D1EF19 /* main.cpp */,
+			);
+			path = Test_ImmediateTriangles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		433114681AF0D5F200D1EF19 /* Test_ImmediateTriangles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 433114731AF0D5F200D1EF19 /* Build configuration list for PBXNativeTarget "Test_ImmediateTriangles" */;
+			buildPhases = (
+				433114651AF0D5F200D1EF19 /* Sources */,
+				433114661AF0D5F200D1EF19 /* Frameworks */,
+				433114671AF0D5F200D1EF19 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test_ImmediateTriangles;
+			productName = Test_ImmediateTriangles;
+			productReference = 433114691AF0D5F200D1EF19 /* Test_ImmediateTriangles */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		433114611AF0D5F200D1EF19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = colin3dmax;
+				TargetAttributes = {
+					433114681AF0D5F200D1EF19 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 433114641AF0D5F200D1EF19 /* Build configuration list for PBXProject "Test_ImmediateTriangles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 433114601AF0D5F200D1EF19;
+			productRefGroup = 4331146A1AF0D5F200D1EF19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				433114681AF0D5F200D1EF19 /* Test_ImmediateTriangles */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		433114651AF0D5F200D1EF19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433114701AF0D5F200D1EF19 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		433114711AF0D5F200D1EF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		433114721AF0D5F200D1EF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		433114741AF0D5F200D1EF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+					"\"/opt/local/lib/\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include\"",
+					"\"/opt/local/include/\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"/opt/local/include/\"",
+					"\"/opt/local/lib/\"",
+					"\"/opt/local/lib\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-weak_library",
+					/opt/local/lib/libglfw.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		433114751AF0D5F200D1EF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+					"\"/opt/local/lib/\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include\"",
+					"\"/opt/local/include/\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"/opt/local/include/\"",
+					"\"/opt/local/lib/\"",
+					"\"/opt/local/lib\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-weak_library",
+					/opt/local/lib/libglfw.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		433114641AF0D5F200D1EF19 /* Build configuration list for PBXProject "Test_ImmediateTriangles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				433114711AF0D5F200D1EF19 /* Debug */,
+				433114721AF0D5F200D1EF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		433114731AF0D5F200D1EF19 /* Build configuration list for PBXNativeTarget "Test_ImmediateTriangles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				433114741AF0D5F200D1EF19 /* Debug */,
+				433114751AF0D5F200D1EF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 433114611AF0D5F200D1EF19 /* Project object */;
+}

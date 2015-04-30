@@ -39,4 +39,20 @@
          location = "group:Chap2_2.0/Chap2_2.0.xcodeproj">
       </FileRef>
    </Group>
+   <Group
+      location = "container:"
+      name = "Lynda_OpenGL">
+      <FileRef
+         location = "group:TriangleBuffer/TriangleBuffer.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Test_ImmediateTriangles/Test_ImmediateTriangles.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Test_Immediate/Test_Immediate.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:TestGLEW/TestGLEW.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>
