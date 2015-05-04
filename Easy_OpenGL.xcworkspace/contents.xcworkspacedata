@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:OpenGLDemo/OpenGLDemo.xcodeproj">
-   </FileRef>
    <Group
       location = "container:"
       name = "Chap1">
@@ -17,6 +14,9 @@
    <Group
       location = "container:"
       name = "Chap2">
+      <FileRef
+         location = "group:Chap2_2.18/Chap2_2.18.xcodeproj">
+      </FileRef>
       <FileRef
          location = "group:Chap2_2.15/Chap2_2.15.xcodeproj">
       </FileRef>
@@ -54,5 +54,23 @@
       <FileRef
          location = "group:TestGLEW/TestGLEW.xcodeproj">
       </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "iOS_OpenGL">
+      <FileRef
+         location = "group:OpenGLDemo/OpenGLDemo.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "OpenGL_V8">
+      <Group
+         location = "container:"
+         name = "Chap2">
+         <FileRef
+            location = "group:OpenGL2_2.5/OpenGL2_2.5.xcodeproj">
+         </FileRef>
+      </Group>
    </Group>
 </Workspace>
