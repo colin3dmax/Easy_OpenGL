@@ -47,14 +47,14 @@ void init()
     glGenVertexArrays(NumVAOs, VAO);
     {
         GLfloat cubeVerts[][3]={
-                        {-1.0 ,-1.0,-1.0},
-                        {-1.0 ,-1.0,1.0},
-                        {-1.0 ,1.0,-1.0},
-                        {-1.0 ,1.0,1.0},
-                        {1.0 ,-1.0,-1.0},
-                        {1.0 ,-1.0,1.0},
-                        {1.0 ,1.0,-1.0},
-                        {1.0 ,1.0,1.0}
+            {-1.0 ,-1.0,-1.0},
+            {-1.0 ,-1.0,1.0},
+            {-1.0 ,1.0,-1.0},
+            {-1.0 ,1.0,1.0},
+            {1.0 ,-1.0,-1.0},
+            {1.0 ,-1.0,1.0},
+            {1.0 ,1.0,-1.0},
+            {1.0 ,1.0,1.0}
         };
         GLfloat cubeColors [][3] ={
             {0.0,0.0,0.0},
@@ -111,13 +111,58 @@ void init()
         idx = 1;
         for (i=0; i<NumConePoints; ++i,++idx) {
             float theta = i*dTheta;
-            coneVerts[idx][0] = cos(theda);
-            coneVerts[idx][1] = sin(theda);
+            coneVerts[idx][0] = cos(theta);
+            coneVerts[idx][1] = sin(theta);
+            coneVerts[idx][2] = 0.0;
+            coneColors[idx][0] = cos(theta);
+            coneColors[idx][1] = sin(theta);
+            coneColors[idx][2] = 0.0;
+            coneIndices[idx] = idx;
             
         }
+        
+        glBindVertexArray(VAO[Cone]);
+        glGenBuffers(NumVAOs, buffers);
+        glBindBuffer(GL_ARRAY_BUFFER, buffers[Vertices]);
+        glBufferData(GL_ARRAY_BUFFER, sizeof(coneVerts), coneVerts, GL_STATIC_DRAW);
+        glVertexPointer(3, GL_FLOAT, 0, BUFFER_OFFSET(0));
+        glEnableClientState(GL_VERTEX_ARRAY);
+        
+        glBindBuffer(GL_ARRAY_BUFFER, buffers[Colors]);
+        glBufferData(GL_ARRAY_BUFFER, sizeof(coneColors), coneColors, GL_STATIC_DRAW);
+        glColorPointer(3, GL_FLOAT, 0, BUFFER_OFFSET(0));
+        glEnableClientState(GL_COLOR_ARRAY);
+        
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, buffers[Elements]);
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(coneIndices), coneIndices, GL_STATIC_DRAW);
+        
+        PrimType[Cone] = GL_TRIANGLE_FAN;
+        NumElements[Cone] = NumberOf(coneIndices);
+        
     }
+    glEnable(GL_DEPTH);
     
     
+}
+
+void display()
+{
+    int i;
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
+    glPushMatrix();
+    glRotatef(Angle, 0.0, 1.0, 0.0);
+    
+    for (i=0; i<NumVAOs; ++i) {
+        glPushMatrix();
+        glTranslatef(xform[i].xlate.x, xform[i].xlate.y, xform[i].xlate.z);
+        glRotatef(xform[i].angle, xform[i].axis.x, xform[i].axis.y, xform[i].axis.z);
+        glBindVertexArray(VAO[i]);
+        glDrawElements(PrimType[i], NumElements[i], GL_UNSIGNED_BYTE, BUFFER_OFFSET(0));
+        glPopMatrix();
+    }
+    glPopMatrix();
+    glutSwapBuffers();
 }
 
 
@@ -135,8 +180,7 @@ int main(int argc,char * argv[]) {
         glOrtho(-300, 300, -300, 300, 1.0, -1.0);
     });
     glutDisplayFunc([](){
-    	//to do ...
-
+        display();
     });
     glutMainLoop();
     return 0;
